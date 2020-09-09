@@ -1,0 +1,9 @@
+.errorIndicator {
+   text-align: center;
+   margin-top: 10px;
+   color: rgb(153, 13, 13);
+}
+
+.errorIndicator_text {
+   font-size: 20px;
+}

@@ -1,0 +1,16 @@
+.like {
+   position: absolute;
+   font-size: 20px;
+   color: white;
+   text-align: center;
+   bottom: 32px;
+   right: 25px;
+}
+
+.like.active {
+	color: #e65100;
+}
+
+.like i {
+   cursor: pointer;
+}
