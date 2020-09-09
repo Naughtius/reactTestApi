@@ -27,7 +27,7 @@ export default class App extends Component {
             this.onError();
          }
       );
-	}
+   }
 
    componentDidCatch() {
       this.onError();
@@ -51,7 +51,7 @@ export default class App extends Component {
 
       const errorMessage = hasError ? <ErrorIndicator /> : null;
       const spinner = loading ? <Spinner /> : null;
-      const content = hasData ? <ItemCard data={data} addLike={this.addLike} /> : null;
+      const content = hasData ? <ItemCard data={data} /> : null;
 
       return (
          <Layout>

@@ -4,7 +4,8 @@ export default class request {
    getResources = new Promise((resolve, reject) => {
       setTimeout(() => {
          const data = items.response.map((item) => this._transformItem(item));
-         resolve(data);
+			resolve(data);
+			reject(new Error("BOOM!!!"));
       }, 1000);
    });
 

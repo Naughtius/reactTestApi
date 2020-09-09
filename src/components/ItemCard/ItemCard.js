@@ -3,7 +3,7 @@ import classes from "./ItemCard.css";
 
 import LikeButton from "../LikeButton";
 
-const ItemCard = ({ data, addLike }) => (
+const ItemCard = ({ data }) => (
    <div className={classes.ItemCard}>
       {data.map((item) => (
          <div className={classes.ItemCard_item} key={item.id}>
@@ -18,7 +18,7 @@ const ItemCard = ({ data, addLike }) => (
             <p>Город: {item.city}</p>
             <p>Улица: {item.street}</p>
             <p>Дом: {item.house}</p>
-            <LikeButton id={item.id} data={data} addLike={addLike} />
+            <LikeButton />
          </div>
       ))}
    </div>
